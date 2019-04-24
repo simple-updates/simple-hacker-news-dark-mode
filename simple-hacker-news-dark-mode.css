@@ -1,0 +1,31 @@
+@-moz-document domain("news.ycombinator.com") {
+  body,
+  #hnmain,
+  td[bgcolor="#ff6600"] {
+    background-color: #1b1b1c !important;
+  }
+
+  a,
+  .pagetop,
+  p,
+  .comment,
+  .commtext {
+    color: #aaa !important;
+  }
+
+  img[width="18"] {
+    display: none;
+  }
+
+  a[href="https://news.ycombinator.com"]::before {
+    content: "/";
+    display: inline-block;
+  }
+
+  input[type="text"],
+  textarea {
+    background-color: #aaa;
+    border: none;
+    padding: 3px;
+  }
+}
